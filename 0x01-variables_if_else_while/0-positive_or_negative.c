@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - checks if random number is positive or negative
  *
  * Return: 0
@@ -20,7 +20,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf(" is 0\n");
+		printf(" is zero\n");
 	}
 	else
 	{
