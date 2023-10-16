@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _strlen: returns the length of the gne string
+ * _strlen - returns the length of the gne string
  * @s: string
  *
  * Return: string length
  */
-int _strlen( char *s)
+int _strlen(char *s)
 {
 	int i = 0;
 
