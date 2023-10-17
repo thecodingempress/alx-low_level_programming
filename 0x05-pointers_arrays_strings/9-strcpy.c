@@ -5,11 +5,11 @@
  * @src: source
  * @dest: destination
  *
- * Return: void
+ * Return: address to new string
  */
-void *_strcpy(char *src, char *dest)
+char *_strcpy(char *src, char *dest)
 {
-	int i, j = 0;
+	size_t i, j = 0;
 
 	for (i = 0; i < strlen(src); i++)
 	{
@@ -18,4 +18,5 @@ void *_strcpy(char *src, char *dest)
 			dest[i] = src[i];
 		}
 	}
+	return (dest);
 }
