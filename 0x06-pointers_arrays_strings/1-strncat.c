@@ -10,6 +10,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
+	char *orgDest = dest;
 
 	while (*dest != '\0')
 	{
@@ -20,6 +21,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		*dest = src[i];
 		i++;
+		dest++;
 	}
-	return (dest);
+	return (orgDest);
 }
