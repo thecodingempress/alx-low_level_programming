@@ -13,8 +13,9 @@ size_t print_listint(const listint_t *h)
 	listint_t *temp = malloc(sizeof(listint_t));
 	size_t i = 0;
 
-	if (!h)
+	if (h == NULL)
 	{
+		free(temp);
 		return (0);
 	}
 	*temp = *h;
@@ -25,6 +26,8 @@ size_t print_listint(const listint_t *h)
 		temp = temp->next;
 		i++;
 	};
+
+	free(temp);
 
 	return (i);
 }
