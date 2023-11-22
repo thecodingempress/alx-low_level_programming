@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- * get_nodeint - returns the address of a node
+ * get_nodeint_at_index - returns the address of a node
  * @head: pointer to head node
  * @index: index of node
  *
@@ -19,10 +19,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		{
 			return (temp);
 		}
-		else
-		{
-			temp = temp->next;
-		}
+
+		temp = temp->next;
 		i++;
 	}
 	return (NULL);
