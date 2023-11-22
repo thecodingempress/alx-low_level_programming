@@ -4,7 +4,7 @@
 #include <stdlib.h>
 /**
  * print_listint - prints the elements for a list
- * @h: list
+ * @head: list
  *
  * Return: number of nodes
  */
