@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 /**
- * pop_listint - deletes the head node 
+ * pop_listint - deletes the head node
  * @head: pointer to head node
  *
  * Return: data of head node
