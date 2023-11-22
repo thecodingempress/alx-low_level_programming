@@ -8,26 +8,16 @@
  *
  * Return: number of nodes
  */
-size_t print_listint(const listint_t *h)
+size_t print_listint(const listint_t *head)
 {
-	listint_t *temp = malloc(sizeof(listint_t));
 	size_t i = 0;
 
-	if (h == NULL)
+	while (head != NULL)
 	{
-		free(temp);
-		return (0);
-	}
-	*temp = *h;
-
-	while (temp != NULL)
-	{
-		printf("%d\n", temp->n);
-		temp = temp->next;
+		printf("%d\n", head->n);
+		head = head->next;
 		i++;
 	};
-
-	free(temp);
 
 	return (i);
 }
