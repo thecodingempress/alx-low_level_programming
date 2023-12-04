@@ -16,7 +16,10 @@ int create_file(const char *filename, char *text_content)
 	int j, l;
 	ssize_t i;
 
-	j = open(filename, O_CREAT | O_RDWR);
+	if (filename == NULL)
+		return (-1);
+
+	j = open(filename, O_CREAT | O_RDWR, 0600);
 	if (j == -1)
 	{
 		return (-1);
